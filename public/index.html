@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Aplicação FullStack</title>
+  </head>
+  <body>
+    <form>
+      <fieldset id="data">
+        <legend id="user">Dados do Usuário</legend>
+
+        <p>
+          <label for="name">Nome de usuário</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Nome de usuário"
+          />
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email" />
+        </p>
+        <p>
+          <label for="password">Senha</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Senha"
+          />
+        </p>
+        <p>
+          <label for="passConfirm">Confirme sua senha</label>
+          <input
+            type="password"
+            name="passConfirm"
+            id="passConfirm"
+            placeholder="Confirmar senha"
+          />
+        </p>
+        <fieldset id="fieldsetGender">
+          <legend>Gênero</legend>
+          <p>
+            <label for="masc">Masculino</label>
+            <input type="radio" name="gender" id="masc" value="Masculino" />
+            <label for="fem">Feminino</label>
+            <input type="radio" name="gender" id="fem" value="Feminino" />
+          </p>
+        </fieldset>
+        <p>
+          <label for="birthdate">Data de nascimento</label>
+          <input type="date" name="birthdate" id="birthdate" />
+        </p>
+      </fieldset>
+
+      <input type="submit" id="submit" value="Cadastrar" />
+    </form>
+
+    <script src="User.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
